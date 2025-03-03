@@ -18,6 +18,7 @@ export type PaymentIntentMetaDataModel = {
 export type WPayWebhook = {
   paymentIntentId: string;
   status: PaymentIntentStatus;
+  amountInCents: number;
   metadata: PaymentIntentMetaDataModel;
 };
 

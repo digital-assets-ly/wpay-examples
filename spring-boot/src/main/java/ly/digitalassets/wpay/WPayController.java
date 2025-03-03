@@ -150,10 +150,10 @@ public class WPayController {
 	public ResponseEntity<WPayPaymentIntentResponse> createWalletPaymentIntent() {
 
 		WPayPaymentIntentMetaData wPayPaymentIntentMetaData = new WPayPaymentIntentMetaData();
-		wPayPaymentIntentMetaData.setCustomerEmail("example@example.example");
-		wPayPaymentIntentMetaData.setOrderId("order_123");
-		wPayPaymentIntentMetaData.setTransactionId("tx_123");
-		wPayPaymentIntentMetaData.setCustomerId("customer_123");
+		wPayPaymentIntentMetaData.setCustomerEmail("example@example.example"); // optional
+		wPayPaymentIntentMetaData.setOrderId("order_123"); // optional
+		wPayPaymentIntentMetaData.setTransactionId("tx_123"); // optional
+		wPayPaymentIntentMetaData.setCustomerId("customer_123"); // optional
 
 		HttpHeaders headers = new HttpHeaders();
 		headers.setBearerAuth(wPayApiKey);
